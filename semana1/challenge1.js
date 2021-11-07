@@ -1,12 +1,9 @@
-const reverseString = async (str) => {
+const reverseString = (str) => {
     if(typeof str !== "string" | str.length <= 1 | str.length > 15) throw new Error("Invalid string!")
 
-    try {
-        let res = str.split("").reverse().join("")
-        return res
-    } catch(error) {
-        console.log(error)
-    }
+    let res = str.split("").reverse().join("")
+    
+    return res
 }
 
 module.exports = {
